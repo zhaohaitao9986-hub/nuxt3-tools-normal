@@ -35,6 +35,6 @@ export const homeData = [
 
             }
         },
-        component: { type: 'home', key: 'home', params: {} },
+        component: { type: 'homeTest', key: 'home', params: {} },
     },
 ]
