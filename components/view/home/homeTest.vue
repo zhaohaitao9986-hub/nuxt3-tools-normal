@@ -19,9 +19,9 @@
           <p class="card-description">
             快速完成文本/字符串的 Base64 编码与解码操作
           </p>
-          <NuxtLink to="/tools/base64" class="button button-primary">
+          <!-- <NuxtLink to="/tools/base64" class="button button-primary">
             立即使用
-          </NuxtLink>
+          </NuxtLink> -->
         </div>
 
         <!-- URL 编码工具卡片 -->
@@ -32,9 +32,9 @@
           <p class="card-description">
             快速完成 URL 的编码与解码操作，支持多种字符集
           </p>
-          <NuxtLink to="/tools/url" class="button button-primary">
+          <!-- <NuxtLink to="/tools/url" class="button button-primary">
             立即使用
-          </NuxtLink>
+          </NuxtLink> -->
         </div>
 
         <!-- JSON 工具卡片 -->
@@ -45,9 +45,9 @@
           <p class="card-description">
             快速格式化、校验和压缩 JSON 数据，提高开发效率
           </p>
-          <NuxtLink to="/tools/json" class="button button-primary">
+          <!-- <NuxtLink to="/tools/json" class="button button-primary">
             立即使用
-          </NuxtLink>
+          </NuxtLink> -->
         </div>
       </div>
     </div>
@@ -55,6 +55,12 @@
 </template>
 
 <script setup>
+const { pageData } = defineProps({
+  pageData: {
+    type: Object,
+    default: () => ({}),
+  },
+});
 /**
  * 工具集合首页组件
  * 展示所有可用的工具卡片，支持响应式布局

@@ -1,8 +1,8 @@
 <template>
   <header id="header">
     <div class="header-inner">
-      <a :href="logoUrl">
-        <img src="/img/mnf5-logo.png" alt="mnf5" loading='lazy'/>
+      <a href="">
+        <img :src="`/img/mnf5-logo.png`" alt="mnf5" loading='lazy'/>
       </a>
     </div>
   </header>
